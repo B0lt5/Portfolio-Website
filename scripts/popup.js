@@ -1,17 +1,23 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contactForm');
     const popup = document.getElementById('popup');
-    const closePopupButton = popup.querySelector('button'); // Select the close button inside the popup
+    const closePopupButton = popup ? popup.querySelector('button') : null; // Select the close button inside the popup
 
     // Function to show the popup
     function showPopup() {
-        popup.style.display = 'block';
+        if (popup) {
+            popup.style.display = 'block';
+        }
     }
     
     // Function to close the popup
     function closePopup() {
-        popup.style.display = 'none';
-        form.reset(); // Reset the form when the popup closes
+        if (popup) {
+            popup.style.display = 'none';
+        }
+        if (form) {
+            form.reset(); // Reset the form when the popup closes
+        }
     }
 
     // Add event listener for form submission
@@ -22,10 +28,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const message = form.message.value.trim();
             const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email regex
 
-            if (name && email && message && emailPattern.test(email)) {
-                showPopup(); // Call the showPopup function
-            } else if (!emailPattern.test(email)) {
-                alert('Please enter a valid email address.');
+            if (!name || !email || !message || !emailPattern.test(email)) {
+                e.preventDefault();
+                alert('Please fill in all required fields and enter a valid email address.');
             }
         });
     }
