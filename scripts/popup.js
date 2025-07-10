@@ -17,8 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add event listener for form submission
     if (form) { // Check if the form element exists before adding listener
         form.addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent default form submission
-
             const name = form.name.value.trim();
             const email = form.email.value.trim();
             const message = form.message.value.trim();
