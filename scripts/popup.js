@@ -3,6 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const popup = document.getElementById('popup');
     const closePopupButton = popup.querySelector('button'); // Select the close button inside the popup
 
+    // Function to show the popup
+    function showPopup() {
+        popup.style.display = 'block';
+    }
+    
     // Function to close the popup
     function closePopup() {
         popup.style.display = 'none';
