@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ayoola Kitan's portfolio website. Aspiring web developer and Python enthusiast.">
+  <title>Contact - Portfolio Website</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="icon" type="image/png" href="Images/briefcase.png">
+  <script src="scripts/popup.js"></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo"><img src="Images/avatar.png" alt="Avatar" class="header-avatar"></div>
+        <div class="header-links">
+          <nav class="nav">
+              <a href="index.html">Home</a>
+              <a href="aboutme.html">About</a>
+              <a href="project.html">Projects</a>
+              <a href="contact.html" class="active">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h1>Get in Touch <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg></h1>
+      <hr>
+      <div class="contact-grid">
+        <!-- Left Column: Message -->
+        <div class="contact-info">
+          <p>You can send me a message. Whether you have a question, project idea, or just want to say hi, feel free to reach out!</p>
+        </div>
+
+        <!-- Right Column: Form -->
+        <div class="contact-form">
+          <form id="contactForm">
+            <label for="name" class="sr-only">Name</label>
+            <input type="text" name="name" placeholder="Name" required>
+            <label for="email" class="sr-only">Email</label>
+            <input type="email" name="email" placeholder="Email" required>
+            <label for="message" class="sr-only">Message</label>
+            <textarea name="message" placeholder="Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+            <div id="popup" style="display:none;">
+              <p>Your Message has been successfully sent</p>
+              <button type="button" onclick="closePopup()">Close</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        <a href="https://github.com/B0lt5" target="_blank">GitHub</a>
+        <a href="https://x.com/oluwakitan17466" target="_blank">Twitter</a>
+      </div>
+      <p>&copy; 2025 KT</p>
+    </div>
+  </footer>
+</body>
+</html>
