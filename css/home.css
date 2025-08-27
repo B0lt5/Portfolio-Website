@@ -38,7 +38,7 @@
     text-decoration: none;
     padding: 10px 10px;
     margin: 15px;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 18px;
     transition: background-color 0.3s ease;
   }
@@ -61,5 +61,6 @@
       margin-bottom: 20px; /* Add spacing below the avatar */
     }
   }
+
 
 
