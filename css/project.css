@@ -8,6 +8,7 @@
   .projects h1 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: white;
   }
   
   .projects hr {
@@ -55,6 +56,7 @@
   .project-card p {
     font-size: 16px;
     margin-bottom: 15px;
+    color: white;
   }
   
   .project-links .btn {
@@ -79,6 +81,7 @@
   section #middle-text {
     padding-top: 50px;
     padding-bottom: 50px;
+    color: white;
   }
 
   section a {
@@ -89,3 +92,4 @@
   section a:hover {
     color: grey;
   }
+
