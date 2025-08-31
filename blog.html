@@ -5,41 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Portfolio Website</title>
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="icon" type="image/png" href="Images/briefcase.png">
 </head>
 <body>
-    <!-- Header Section -->
     <header class="header">
         <div class="container">
-        <div class="header-content">
-            <div class="logo"><img src="Images/avatar.png" alt="Avatar" class="header-avatar"></div>
-            <div class="header-links">
-            <nav class="nav">
-                <a href="index.html">Home</a>
-                <a href="aboutme.html">About</a>
-                <a href="blog.html" class="active">Blog</a>
-                <a href="project.html">Projects</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+            <div class="header-content">
+                <div class="logo"><img src="Images/avatar.png" alt="Avatar" class="header-avatar"></div>
+                <div class="header-links">
+                    <nav class="nav">
+                        <a href="index.html">Home</a>
+                        <a href="aboutme.html">About</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="project.html">Projects</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
             </div>
-        </div>
         </div>
     </header>
 
-    <!-- Elfsight Blog | Untitled Blog -->
-    <script src="https://elfsightcdn.com/platform.js" async></script>
-    <div class="elfsight-app-1eacc3f3-c642-4d7b-bfd4-c5c5e6dd7a65" data-elfsight-app-lazy></div>
+    <section id="blog-posts" class="blog">
+        <div class="container">
+            <h1>Blog Posts <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><title>post</title><path d="M3 3V21H21V3H3M18 18H6V17H18V18M18 16H6V15H18V16M18 12H6V6H18V12Z" /></svg></h1>
+            <hr>
 
-    <!-- Footer Section -->
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search blog posts...">
+            </div>
+
+            <div class="blog-grid">
+                <a href="Blog Posts/my-first-blog-post.html" class="blog-card">
+                    <img src="Images/your-image-1.jpg" alt="Blog Post 1 Image" class="blog-image">
+                    <div class="blog-content">
+                        <h2>My First Post: Why I'm Learning to Code</h2>
+                        <p>A short introduction to my journey as a web developer and my passion for problem-solving with code.</p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+
+                <a href="Blog Posts/understanding-the-differences-between-html-and-css.html" class="blog-card">
+                    <img src="Images/your-image-2.jpg" alt="Blog Post 2 Image" class="blog-image">
+                    <div class="blog-content">
+                        <h2>Understanding the difference between HTML and CSS</h2>
+                        <p>Exploring the fundamental roles of HTML and CSS in web development.</p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+
+                <a href="Blog Posts/importance-of-responsive-design.html" class="blog-card">
+                    <img src="Images/your-image-3.jpg" alt="Blog Post 3 Image" class="blog-image">
+                    <div class="blog-content">
+                        <h2>The Importance of Responsive Design</h2>
+                        <p>Discussing why building websites that work on all devices is essential for a great user experience.</p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+
+                
+                <a href="Blog Posts/my-favorite-web-development-tools.html" class="blog-card">
+                    <img src="Images/your-image-4.jpg" alt="Blog Post 4 Image" class="blog-image">
+                    <div class="blog-content">
+                        <h2>My Favorite Web Development Tool (and Why I Use It)</h2>
+                        <p>Sharing the tools and technologies that have been instrumental in my web development journey.</p>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
-        <div class="social-links">
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-            <a href="https://github.com/B0lt5" target="_blank">GitHub</a>
-            <a href="https://x.com/oluwakitan17466" target="_blank">Twitter</a>
-        </div>
-        <p>&copy; 2025 KT</p>
+            <div class="social-links">
+                <a>LinkedIn</a>
+                <a href="https://github.com/B0lt5" target="_blank">GitHub</a>
+                <a href="https://x.com/oluwakitan17466" target="_blank">Twitter</a>
+            </div>
+            <p>&copy; 2025 KT</p>
         </div>
     </footer>
+    <script src="scripts/search.js"></script>
 </body>
-
 </html>
