@@ -27,7 +27,7 @@
   .contact-info {
     text-align: left;
     font-size: 20px;
-    color: #d4af37; /* Gold text */
+    color: white;
   }
   
   .contact-form {
@@ -60,7 +60,7 @@
   }
   
   .contact-form button:hover {
-    background-color: #d4af37; /* Slightly darker gold */
+    background-color: #d4af37;
   }
 
   #popup {
@@ -96,4 +96,5 @@
     white-space: nowrap;
     border-width: 0;
 }
+
   
