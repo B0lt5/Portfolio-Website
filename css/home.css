@@ -1,66 +1,103 @@
+/* Existing styles */
+.hero {
+  padding: 100px 0;
+}
 
-  .hero {
-    padding: 100px 0;
-  }
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 100px; /* Space between image and text */
+}
 
+.avatar {
+  width: 600px;
+  height: 600px;
+  border-radius: 12px;
+  border: 3px solid gold;
+  margin-bottom: 20px;
+}
+
+.header-text {
+  text-align: left;
+}
+
+.header-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.header-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.header-text p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.header-text .btn {
+  background-color: gold;
+  color: black;
+  text-decoration: none;
+  padding: 10px 10px;
+  margin: 10px;
+  border-radius: 15px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+/* Updated selector to target button container */
+.header-text .button-container {
+    justify-content: right;
+    display: flex; /* Makes the buttons sit side-by-side */
+}
+
+.header-text .btn #cv-btn {
+  margin-left: 30px; /* Space between the two buttons */
+}
+
+.header-text .btn:hover {
+  background-color: #d4af37; /* Slightly darker gold */
+}
+
+/* Media Query for mobile screens */
+@media (max-width: 768px) {
   .hero-content {
-    display: flex;
-    align-items: center;
-    gap: 100px; /* Space between image and text */
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+    gap: 20px; /* Reduce gap for mobile */
   }
-  
+
   .avatar {
-    width: 600px;
-    height: 600px;
-    border-radius: 12px;
-    border: 3px solid gold;
-    margin-bottom: 20px;
+    width: 100%; /* Make avatar image responsive */
+    height: auto;
+    max-width: 400px; /* Prevents the image from getting too large */
   }
 
   .header-text {
-    text-align: left;
+    text-align: center;
   }
-  
+
   .header-text h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 28px; /* Smaller font size for mobile */
   }
-  
+
+  .header-text h2 {
+    font-size: 20px;
+  }
+
   .header-text p {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 16px;
   }
-  
+
+  .header-text .button-container {
+    flex-direction: column; /* Stack buttons vertically on mobile */
+    align-items: center;
+  }
+
   .header-text .btn {
-    background-color: gold;
-    color: black;
-    justify-content: right ;
-    text-decoration: none;
-    padding: 10px 10px;
-    margin: 15px;
-    border-radius: 15px;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
+    width: 80%; /* Make buttons take up more space */
+    margin: 5px 0; /* Adjust margin for stacked buttons */
   }
-
-  .header-text .btn#cv-btn {
-    margin-left: 30px; /* Space between the two buttons */
-  }
-  
-  .header-text .btn:hover {
-    background-color: #d4af37; /* Slightly darker gold */
-  }
-
-  @media (max-width: 768px) {
-    .hero-content {
-      flex-direction: column; /* Stack image and text vertically on smaller screens */
-      text-align: center;
-    }
-  
-    .avatar {
-      margin-bottom: 20px; /* Add spacing below the avatar */
-    }
-  }
-
-
-
+}
