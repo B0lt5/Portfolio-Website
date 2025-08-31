@@ -1,0 +1,94 @@
+/* Blog Section Styles */
+.blog {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.search-container {
+    margin-bottom: 30px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gold;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#search-input::placeholder {
+    color: #888;
+}
+
+#search-input:focus {
+    background-color: transparent;
+    outline: none;
+}
+
+.blog h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.blog hr {
+    width: 50px;
+    height: 2px;
+    background-color: gold;
+    border: none;
+    margin: 20px auto;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.blog-card {
+    background-color: #111;
+    border: 1px solid gold;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white; /* Make sure the text is visible */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Ensures image and content stay within the card */
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.5);
+}
+
+.blog-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.blog-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.blog-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: gold; /* Use your accent color for titles */
+}
+
+.blog-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: white; /* For readability */
+}
+
+.read-more {
+    display: inline-block;
+    color: gold;
+    font-weight: bold;
+}
