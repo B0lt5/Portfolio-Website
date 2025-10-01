@@ -86,3 +86,9 @@
   display: inline-block;
   margin: 0 1px;
 }
+
+.post-content ul, ol {
+    padding-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
