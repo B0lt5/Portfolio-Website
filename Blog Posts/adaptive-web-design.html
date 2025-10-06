@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Web Design - Portfolio Website</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/blog-post.css">
+    <link rel="icon" type="image/png" href="../Images/briefcase.png">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo"><img src="../Images/avatar.png" alt="Avatar" class="header-avatar"></div>
+                <div class="header-links">
+                    <nav class="nav">
+                        <a href="../index.html">Home</a>
+                        <a href="../aboutme.html">About</a>
+                        <a href="../blog.html">Blog</a>
+                        <a href="../project.html">Projects</a>
+                        <a href="../contact.html">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="blog-post">
+        <div class="container">
+            <h1 class="post-title">Adaptive Web Design</h1>
+             <div class="author-info">
+                <img src="../Images/avatar.png" alt="Your Name" class="author-avatar">
+                <span>KT • October 2, 2025</span>
+            </div>
+            <hr class="post-divider">
+            <img src="../Images/your-image-6.png" alt="adaptive web design" class="post-image">
+
+            <div class="post-content">
+                <p>
+                    In this post, I want to introduce another web design approach that can be used in place of Responsive Design, Adaptive Design.
+                </p>
+                <p>
+                    <b>Introduction</b><br>Adaptive web design (AWD) is another web design approach that uses multiple fixed-layout versions of a webpage to fit different devices, rather than a single, fluid layout. When a user visits a site, the server detects their screen size and delivers the most appropriate pre-designed layout, providing a highly optimized, yet static, user experience for that specific device category. 
+                </p>
+                <p>
+                    The website adapts by selecting the most appropriate layout from a set of options, rather than fluidly resizing and rearranging content like responsive design.
+                </p>
+                <p><b>How adaptive design works</b></p>
+                <ul>
+                    <li><b>Pre-defined layouts</b>: Developers create multiple, distinct layouts for a site based on common screen widths, or "breakpoints." A standard might include versions for mobile (e.g., 320px, 480px), tablets (e.g., 760px), and desktops (e.g., 960px, 1200px, 1600px).</li>
+                    <li><b>Device detection</b>: When a user visits the site, the server or browser detects the device type, screen size, and other characteristics.</li>
+                    <li><b>Optimal layout served</b>: Based on that detection, the system delivers the best-fitting, pre-built layout to the user. If a user resizes their browser window on a desktop, the layout will not fluidly adjust until it hits the next pre-defined breakpoint.</li>
+                    <Li><b>Progressive enhancement</b>: Adaptive design is often associated with the concept of "progressive enhancement," where developers start by building a robust version for small, less capable screens and then add enhanced features and a more complex layout for larger, more powerful devices.</Li>
+                </ul>
+                <p><b>Key characteristics</b></p>
+                <ul>
+                    <li><b>Dedicated Experience</b>: AWD provides a tailored experience for each specific device, offering more control over content and layout for different platforms.</li>
+                    <li><b>Pre-defined Screen Sizes</b>: The design is based on a limited set of common screen widths, not a continuous range of sizes.</li>
+                    <li><b>Static Content</b>: Once loaded, the layout for a particular device doesn't change or reflow as it might in a responsive design when the browser window is resized.</li>
+                </ul>
+                <p><b>When to use it</b></p>
+                <ul>
+                    <li><b>Optimized for Specific Devices</b>: It is ideal for situations where the goal is to create a highly polished experience for distinct device categories, such as web applications with separate iOS, Android, and desktop versions.</li>
+                    <li><b>Retrofitting Existing Sites</b>: Adaptive design can be a good strategy for improving the mobile experience of an existing desktop site by allowing control over design for new viewports.</li>
+                </ul>
+                <p>
+                    <b>How they relate</b><br>Adaptive and Responsive Design are both solutions to the same modern web challenge: accommodating the wide variety of devices and screen sizes. They are not mutually exclusive, and many developers use a hybrid approach that combines the best aspects of both. For example, a developer might use responsive techniques for general page layout but use adaptive techniques to swap out key images or navigation menus at major screen-size breakpoints.
+                </p>
+                <p>
+                    <b>Responsive Design VS Adaptive Design</b><br>While often used interchangeably, both responsive and adaptive designsaim to make a website accessible and user-friendly across multiple devices but  differ in their approach:
+                </p>
+                <ul>
+                    <li><b>Responsive design</b>: Uses a fluid, flexible layout that continuously adjusts to the browser space. It relies on a single codebase that dynamically reflows content.</li>
+                    <li><b>Adaptive design</b>: Uses a set of static layouts designed for specific screen sizes or breakpoints. The website detects the user's device and loads the most appropriate predefined layout.</li>
+                </ul>
+                <img src="../Images/your-image-6b.png" alt="adaptiv design vs responsive design" class="post-image">
+                <p>
+                    <b>Conclusion</b><br>Adaptive Web Design offers a powerful alternative or complement to Responsive Design, addressing the modern challenge of diverse screen sizes by using multiple, distinct, fixed layouts. Rather than fluidly adjusting, the website detects the user's device and serves the most optimal, pre-designed experience from a set of static layouts. 
+                </p>
+                <p>
+                    This approach provides dedicated control over the user experience for specific device categories and is often associated with progressive enhancement.
+                </p>
+                <p>
+                    While both adaptive and responsive designs aim for cross-device accessibility, they differ in their method—static, multiple layouts versus a single, fluid layout. Ultimately, developers often employ a hybrid strategy, blending the best features of both to create a robust and highly optimized web presence for all users.
+                </p>
+                <p>Thank you for reading and have a wonderful rest of your day.</p>
+            </div>
+            <a href="../blog.html" class="back-link">← Back to all posts</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a>LinkedIn</a>
+                <a href="https://github.com/B0lt5" target="_blank">GitHub</a>
+                <a href="https://x.com/oluwakitan17466" target="_blank">Twitter</a>
+            </div>
+            <p>&copy; 2025 KT</p>
+        </div>
+    </footer>
+</body>
+</html>
