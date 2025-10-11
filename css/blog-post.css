@@ -96,3 +96,24 @@
 ul ul {
     list-style-type: square;
 }
+
+.tech-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.tech-table th, .tech-table td {
+    border: 1px solid #ddd;
+    padding: 10px 10px;
+}
+
+.tech-table td {
+    text-align: left;
+}
+
+.tech-table thead tr {
+    text-align: center;
+    color: white;
+}

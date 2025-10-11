@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git & Version Control - Portfolio Website</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/blog-post.css">
+    <link rel="icon" type="image/png" href="../Images/briefcase.png">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo"><img src="../Images/avatar.png" alt="Avatar" class="header-avatar"></div>
+                <div class="header-links">
+                    <nav class="nav">
+                        <a href="../index.html">Home</a>
+                        <a href="../aboutme.html">About</a>
+                        <a href="../blog.html">Blog</a>
+                        <a href="../project.html">Projects</a>
+                        <a href="../contact.html">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="blog-post">
+        <div class="container">
+            <h1 class="post-title">Git & Version Control</h1>
+             <div class="author-info">
+                <img src="../Images/avatar.png" alt="Your Name" class="author-avatar">
+                <span>KT • October 10, 2025</span>
+            </div>
+            <hr class="post-divider">
+            <img src="../Images/your-image-8.png" alt="Git Logo" class="post-image">
+
+            <div class="post-content">
+                <p>
+                    Hey there, Welcome to another blog post! Today we’re picking off where we stopped in the last post. I’ll be discussing more about Git and Version Control.
+                </p>
+                <p>
+                    <b>Git</b><br>Git is a software that allows you to keep track of changes made to a project over time. Git works by recording the changes you make to a project, storing those changes, then allowing you to reference them as needed. A Git project can be thought of as having three parts:
+                </p>
+                <ul>
+                    <li><b>A Working Directory</b>. This is where you’ll be doing all the work; creating, editing, deleting and organizing files.</li>
+                    <li><b>A Staging Area</b>. This is where you prepare the set of changes you made before finalizing them as a commit in the Repository</li>
+                    <li><b>A Repository</b>. This is where Git permanently stores those changes as different versions of the project.</li>
+                </ul>
+                <p>
+                    The Git workflow consists of editing files in the working directory, adding files to the staging area and saving the changes to Git repository.
+                </p>
+                <p>
+                    <b>Version Control Systems (VCS)</b><br>A version control system records changes to a file or set of files over time, enabling the retrieval of specific versions later. This provides several key benefits: 
+                </p>
+                <ul>
+                    <li><b>History Tracking</b>: A complete history of all changes made to a project is maintained, including who made the change, when it was made, and what the change entailed.</li>
+                    <li><b>Collaboration</b>: Multiple individuals can work on the same project simultaneously without overwriting each other's work. VCS facilitates merging changes from different contributors into a unified codebase.</li>
+                    <li><b>Branching and Merging</b>: VCS allows the creation of branches, which are separate lines of development. This enables experimentation and feature development without affecting the main codebase. Changes from branches can be merged back into the main codebase when ready.</li>
+                    <li><b>Reversion</b>: The ability to revert to previous versions of files or the entire project if errors are introduced or unwanted changes occur.</li>
+                </ul>
+                <p>
+                    <b>Git as a Distributed VCS</b><br>Git distinguishes itself as a distributed version control system, meaning that each developer has a complete copy of the entire repository, including its full history, on their local machine.  Like I said in the last post, Git can also be used outside of GitHub. This offers advantages over centralized systems:
+                </p>
+                <ul>
+                    <li><b>Offline Work</b>: Developers can work on their local repositories without an internet connection and synchronize their changes later.</li>
+                    <li><b>Redundancy</b>: The distributed nature provides inherent backup, as multiple copies of the repository exist.</li>
+                    <li><b>Speed</b>: Operations like committing and viewing history are often faster as they occur locally.</li>
+                    <li><b>Flexibility</b>: Developers can experiment with changes in isolated branches without affecting the main codebase until they are ready to merge.</li>
+                </ul>
+                <p><b>Key Git Concepts</b></p>
+                <ul>
+                    <li><b>Commit</b>: A snapshot of the project at a specific point in time, along with a message describing the changes.</li>
+                    <li><b>Branch</b>: A separate line of development that diverges from the main project and allows for parallel work on different features or fixes.</li>
+                    <li><b>Merge</b>: The process of combining changes from one branch into the main project.</li>
+                </ul>
+                <p>
+                    <b>Conclusion</b><br>In summary, Git is a robust & flexible tool for managing changes to projects, and its distributed nature offers significant advantages for collaboration and flexibility. Understanding these concepts is essential for effective use of Git in software development.
+                </p>
+                <p>Thank you for reading and have a wonderful rest of your day.👋</p>
+            </div>
+            <a href="../blog.html" class="back-link">← Back to all posts</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a>LinkedIn</a>
+                <a href="https://github.com/B0lt5" target="_blank">GitHub</a>
+                <a href="https://x.com/oluwakitan17466" target="_blank">Twitter</a>
+            </div>
+            <p>&copy; 2025 KT</p>
+        </div>
+    </footer>
+</body>
+</html>
