@@ -27,7 +27,7 @@
   .contact-info {
     text-align: left;
     font-size: 20px;
-    color: white;
+    color: white; /* Gold text */
   }
   
   .contact-form {
@@ -35,6 +35,14 @@
     padding: 20px;
     border-radius: 10px;
     border: 1px solid gold;
+  }
+
+  .contact-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;
   }
   
   .contact-form input,
@@ -77,13 +85,32 @@
   #popup button:hover {
     background-color: #d4af37;
   }
+
+  span {
+    color: red;
+  }
+
+  .form-footer {
+    font-size: 14px;
+    color: gray;
+    margin-top: -10px;
+    text-align: center;
+    margin-top: 10px;
+  }
   
   /* Responsive Design */
-  @media (max-width: 768px) {
-    .contact-grid {
-      grid-template-columns: 1fr;
-    }
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr; /* Stack the columns on mobile */
+    gap: 30px; /* Reduce the gap between stacked items */
+    padding: 0 20px; /* Add horizontal padding for a clean look */
   }
+
+  .contact-info {
+      text-align: center; /* Center align the contact info text */
+      font-size: 18px; /* Slightly reduce font size for readability */
+  }
+}
 
   .sr-only {
     position: absolute;
@@ -96,5 +123,4 @@
     white-space: nowrap;
     border-width: 0;
 }
-
   
