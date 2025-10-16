@@ -61,9 +61,12 @@
     color: grey;
   }
 
-    svg {
-    fill: gold;
-  }
+  h1 .fa-solid,
+  h1 .fa-brands,
+  h1 .fa-regular {
+    color: #F8C300;
+    transition: color 0.3s ease;
+}
 
   .footer {
     background-color: black;
@@ -86,6 +89,7 @@
   }
   
   .footer p {
+    color: gold;
     margin-top: 10px;
     font-size: 14px;
   }

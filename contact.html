@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/contact.css">
   <link rel="icon" type="image/png" href="Images/briefcase.png">
   <script src="scripts/popup.js"></script>
+  <script src="https://kit.fontawesome.com/8e0278b98b.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- Header Section -->
@@ -32,7 +33,7 @@
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <div class="container">
-      <h1>Get in Touch <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg></h1>
+      <h1>Get in Touch <i class="fa-regular fa-address-card fa-1x"></i></h1>
       <hr>
       <div class="contact-grid">
         <!-- Left Column: Message -->
@@ -44,9 +45,9 @@
         <!-- Right Column: Form -->
         <div class="contact-form">
           <form id="contactForm" action="https://formspree.io/f/xwpnagrg" method="POST" onsubmit="showPopup(event)">
-            <label for="name">Name<span>*</span></label>
+            <label for="name">✦ Name<span>*</span></label>
             <input type="text" name="name"  required>
-            <label for="email">Email<span>*</span></label>
+            <label for="email">✉ Email<span>*</span></label>
             <input type="email" name="email" required>
             <label for="message">Message<span>*</span></label>
             <textarea name="message" rows="5" required></textarea>
@@ -69,9 +70,9 @@
   <footer class="footer">
     <div class="container">
       <div class="social-links">
-        <a>LinkedIn</a>
-        <a href="https://github.com/B0lt5" target="_blank">GitHub</a>
-        <a href="https://x.com/oluwakitan17466" target="_blank">Twitter</a>
+        <a><i class="fa-brands fa-linkedin-in fa-1x"></i></a>
+        <a href="https://github.com/B0lt5" target="_blank"><i class="fa-brands fa-github fa-1x"></i></a>
+        <a href="https://x.com/oluwakitan17466" target="_blank"><i class="fa-brands fa-twitter fa-1x"></i></a>
       </div>
       <p>&copy; 2025 KT</p>
     </div>
