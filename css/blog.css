@@ -92,3 +92,8 @@
     color: gold;
     font-weight: bold;
 }
+
+.new-link {
+    color: gold;
+    text-decoration: none;
+}
