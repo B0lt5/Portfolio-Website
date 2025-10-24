@@ -117,3 +117,9 @@ ul ul {
     text-align: center;
     color: white;
 }
+
+.new-blog-link {
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+}
