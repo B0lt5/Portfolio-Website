@@ -36,7 +36,7 @@
   }
   
   .project-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(255, 215, 0, 0.5); /* Gold shadow */
   }
   
@@ -60,18 +60,28 @@
   }
   
   .project-links .btn {
-    background-color: gold;
-    color: black;
+    background-color: black;
+    color: gold;
     text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 8px;
     font-size: 14px;
-    margin: 0 5px;
-    transition: background-color 0.3s ease;
+    margin: 5px;
+    font-weight: 600;
+    border: 2px solid gold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
   }
   
   .project-links .btn:hover {
-    background-color: #d4af37; /* Slightly darker gold */
+    background-color: gold;
+    color: black;
+    transform: translateY(-5px);
+  }
+
+  .project-links .btn:active {
+    transform: translateY(0);
   }
   
   section h1 {
@@ -90,7 +100,7 @@
   }
 
   section a:hover {
-    color: grey;
+    color: gold;
   }
 
 .modal {

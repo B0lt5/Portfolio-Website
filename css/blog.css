@@ -94,6 +94,11 @@
 }
 
 .new-link {
-    color: gold;
+    /* color: gold; */
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+section a:hover {
+    color: gold;
 }

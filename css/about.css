@@ -27,6 +27,15 @@
   margin-bottom: 30px;
 }
 
+.about-me a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.about-me a:hover {
+  color: gold;
+}
+
 .about img {
   width: 700px;
   height: 800px;

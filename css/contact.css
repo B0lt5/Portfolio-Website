@@ -54,21 +54,34 @@
     border-radius: 5px;
     background-color: black;
     color: white;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+    border-color: #d4af37;
   }
   
   .contact-form button {
-    background-color: gold;
-    color: black;
-    border: none;
+    background-color: black;
+    color: gold;
+    border: 2px solid gold;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
   }
-  
-  .contact-form button:hover {
-    background-color: #d4af37;
+
+  .contact-form #send-btn:hover {
+    background-color: gold;
+    color: black;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
   }
 
   #popup {
@@ -83,7 +96,8 @@
   }
 
   #popup button:hover {
-    background-color: #d4af37;
+    background-color: gold;
+    color: black;
   }
 
   span {
