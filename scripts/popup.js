@@ -23,41 +23,52 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add event listener for form submission
     if (form) {
         form.addEventListener('submit', async function(e) {
-            e.preventDefault(); // Prevent default form submission
+            e.preventDefault();
 
             const name = form.name.value.trim();
             const email = form.email.value.trim();
             const message = form.message.value.trim();
             const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-            if (name && email && message && emailPattern.test(email)) {
-                // If validation passes, proceed with sending the form
-                const formData = new FormData(form);
-
-                try {
-                    const response = await fetch(form.action, {
-                        method: 'POST',
-                        body: formData,
-                        headers: {
-                            'Accept': 'application/json'
-                        }
-                    });
-
-                    if (response.ok) {
-                        showPopup(); // Show the popup on successful submission
-                    } else {
-                        // Handle potential server-side errors
-                        alert('Oops! There was a problem submitting your form. Please try again.');
-                    }
-                } catch (error) {
-                    // Handle network errors
-                    console.error('Fetch error:', error);
-                    alert('An error occurred. Please check your internet connection and try again.');
-                }
-            } else if (!emailPattern.test(email)) {
-                alert('Please enter a valid email address.');
-            } else {
+            if (!name || !email || !message) {
                 alert('Please fill out all the required fields.');
+                return;
+            }
+
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            // Disable button to prevent double submissions
+            const sendBtn = document.getElementById('send-btn');
+            sendBtn.disabled = true;
+            sendBtn.textContent = 'Sending...';
+
+            try {
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({ name, email, message })
+                });
+
+                const data = await response.json();
+
+                if (response.ok && data.success) {
+                    showPopup();
+                } else {
+                    alert(data.error || 'Oops! There was a problem submitting your form. Please try again.');
+                }
+            } catch (error) {
+                console.error('Fetch error:', error);
+                alert('An error occurred. Please check your internet connection and try again.');
+            } finally {
+                // Re-enable the button regardless of outcome
+                sendBtn.disabled = false;
+                sendBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Message';
             }
         });
     }
