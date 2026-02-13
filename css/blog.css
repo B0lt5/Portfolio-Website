@@ -4,6 +4,45 @@
     text-align: center;
 }
 
+.btn {
+  background-color: black;
+  color: gold;
+  text-decoration: none;
+  padding: 15px 35px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border: 2px solid gold;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.btn:hover {
+  background-color: gold;
+  color: black;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+#blog-btn {
+  background-color: transparent;
+  color: gold;
+  border: 2px solid gold;
+  box-shadow: none;
+}
+
+#blog-btn:hover {
+  background-color: gold;
+  color: black;
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+}
+
 .search-container {
     margin-bottom: 30px;
 }
@@ -25,6 +64,9 @@
 
 #search-input:focus {
     background-color: transparent;
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+    transform: translateY(-5px);
+    transition: 0.25s ease-in-out;
     outline: none;
 }
 
