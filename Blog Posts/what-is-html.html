@@ -13,7 +13,10 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo"><img src="../Images/avatar.png" alt="Avatar" class="header-avatar"></div>
-                <div class="header-links">
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                  <span></span><span></span><span></span>
+                </button>
+                <div class="header-links" id="header-links">
                     <nav class="nav">
                         <a href="../index.html">Home</a>
                         <a href="../aboutme.html">About</a>
@@ -48,9 +51,9 @@
                 </p>
                 <p>
                     Ok now, let’s break it down even further:<br>
-                    HT – HyperText<br>
-                    M – Markup<br>
-                    L – Language
+                    HT â€“ HyperText<br>
+                    M â€“ Markup<br>
+                    L â€“ Language
                 </p>
                 <p>
                     <b>HyperText</b><br>HyperText is a non - linear way of organizing information.
@@ -59,10 +62,10 @@
                    Let me explain, Linear text follows a single, predetermined path from beginning to end. The author decides the order, and the reader must follow that sequence to make sense of the content, An example is a novel. While Non-linear text breaks free from this rigid, sequential structure, allowing the reader to choose their own path through the information, An example is a website or a dictionary.
                 </p>
                 <p>
-                   Non – linear text allows users to jump from one piece of content to another by clicking on special text called hyperlinks. The web is built on hypertext, as links connect documents and other resources across the internet.
+                   Non â€“ linear text allows users to jump from one piece of content to another by clicking on special text called hyperlinks. The web is built on hypertext, as links connect documents and other resources across the internet.
                 </p>
                 <p>
-                   For example, when you’re reading a book, you read page 1, page 2, page 3, and so on but when you’re reading a document online, you can click on a link that takes you to an entirely different document. With this you create your own unique reading path.
+                   For example, when youâ€™re reading a book, you read page 1, page 2, page 3, and so on but when youâ€™re reading a document online, you can click on a link that takes you to an entirely different document. With this you create your own unique reading path.
                 </p>
                 <p>
                    The ability for documents to be infinitely linked and for users to go between them at will, is the entire foundation of the <b>World Wide Web</b>.
@@ -102,11 +105,11 @@
                     <b>Conclusion</b><br>In summary, HTML (HyperText Markup Language) is the non-negotiable foundation for every webpage. It is the declarative markup language that acts as the "bones", or structural skeleton, for every website, using a defined set of tags to organize and annotate content for the browser.
                 </p>
                 <p>
-                    The HyperText component of HTML is what makes the web function, creating a non-linear network of documents connected by hyperlinks. And once you have the structure in place, you’re ready to add the style and bring it fully to life with CSS, and power its actions and logic using JavaScript.
+                    The HyperText component of HTML is what makes the web function, creating a non-linear network of documents connected by hyperlinks. And once you have the structure in place, youâ€™re ready to add the style and bring it fully to life with CSS, and power its actions and logic using JavaScript.
                 </p>
                 <p>Thank you for reading and have a wondeful rest of your day.</p>
             </div>
-            <a href="../blog.html" class="back-link">← Back to all posts</a>
+            <a href="../blog.html" class="back-link">â† Back to all posts</a>
         </div>
     </main>
 
@@ -120,6 +123,14 @@
             <p>&copy; 2025 KT</p>
         </div>
     </footer>
-</body>
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const headerLinks = document.getElementById('header-links');
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        headerLinks.classList.toggle('nav-open');
+      });
+    </script>
+  </body>
 
 </html>

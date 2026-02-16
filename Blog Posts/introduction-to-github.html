@@ -13,7 +13,10 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo"><img src="../Images/avatar.png" alt="Avatar" class="header-avatar"></div>
-                <div class="header-links">
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                  <span></span><span></span><span></span>
+                </button>
+                <div class="header-links" id="header-links">
                     <nav class="nav">
                         <a href="../index.html">Home</a>
                         <a href="../aboutme.html">About</a>
@@ -80,11 +83,11 @@
                     <li><b>Researchers and academics</b>: Use it to share code, data, and documentation for scientific projects, ensuring reproducibility and fostering collaboration.</li>
                 </ul>
                 <p>
-                    <b>Conclusion</b><br>In summary, GitHub is an essential platform in modern development. It’s a hosting service that leverages the Git version-control tool to make teamwork and project management simple. By tracking every change and allowing you to save your local repositories to a remote repository in the cloud , GitHub ensures your code is safe, organized, and collaborative. It's far more than just a website; it’s the primary tool developers use today to manage history, collaborate seamlessly, and build software together.
+                    <b>Conclusion</b><br>In summary, GitHub is an essential platform in modern development. Itâ€™s a hosting service that leverages the Git version-control tool to make teamwork and project management simple. By tracking every change and allowing you to save your local repositories to a remote repository in the cloud , GitHub ensures your code is safe, organized, and collaborative. It's far more than just a website; itâ€™s the primary tool developers use today to manage history, collaborate seamlessly, and build software together.
                 </p>
-                <p>In the next post, we’ll discuss more about Git. Thank you for reading and have a wonderful rest of your day.👋</p>
+                <p>In the next post, weâ€™ll discuss more about Git. Thank you for reading and have a wonderful rest of your day.ðŸ‘‹</p>
             </div>
-            <a href="../blog.html" class="back-link">← Back to all posts</a>
+            <a href="../blog.html" class="back-link">â† Back to all posts</a>
         </div>
     </main>
 
@@ -98,5 +101,13 @@
             <p>&copy; 2025 KT</p>
         </div>
     </footer>
-</body>
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const headerLinks = document.getElementById('header-links');
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        headerLinks.classList.toggle('nav-open');
+      });
+    </script>
+  </body>
 </html>

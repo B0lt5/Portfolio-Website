@@ -13,7 +13,10 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo"><img src="../Images/avatar.png" alt="Avatar" class="header-avatar"></div>
-                <div class="header-links">
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                  <span></span><span></span><span></span>
+                </button>
+                <div class="header-links" id="header-links">
                     <nav class="nav">
                         <a href="../index.html">Home</a>
                         <a href="../aboutme.html">About</a>
@@ -78,9 +81,9 @@
                 <p>
                     <b>Conclusion</b><br>In summary, Git is a robust & flexible tool for managing changes to projects, and its distributed nature offers significant advantages for collaboration and flexibility. Understanding these concepts is essential for effective use of Git in software development.
                 </p>
-                <p>Thank you for reading and have a wonderful rest of your day.👋</p>
+                <p>Thank you for reading and have a wonderful rest of your day.ðŸ‘‹</p>
             </div>
-            <a href="../blog.html" class="back-link">← Back to all posts</a>
+            <a href="../blog.html" class="back-link">â† Back to all posts</a>
         </div>
     </main>
 
@@ -94,5 +97,13 @@
             <p>&copy; 2025 KT</p>
         </div>
     </footer>
-</body>
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const headerLinks = document.getElementById('header-links');
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        headerLinks.classList.toggle('nav-open');
+      });
+    </script>
+  </body>
 </html>

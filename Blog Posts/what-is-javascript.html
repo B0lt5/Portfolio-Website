@@ -13,7 +13,10 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo"><img src="../Images/avatar.png" alt="Avatar" class="header-avatar"></div>
-                <div class="header-links">
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                  <span></span><span></span><span></span>
+                </button>
+                <div class="header-links" id="header-links">
                     <nav class="nav">
                         <a href="../index.html">Home</a>
                         <a href="../aboutme.html">About</a>
@@ -62,7 +65,7 @@
                     <b>Script</b><br>While HTML is a declarative markup language and CSS is a style sheet language, JavaScript is a <b>true programming language</b>. This means it can execute complex instructions, manage data, and perform logical operations.
                 </p>
                 <p>
-                    JavaScript allows developers to write scripts—or sets of commands—that the browser executes. These scripts are responsible for everything that happens on a page after it's loaded, such as:
+                    JavaScript allows developers to write scriptsâ€”or sets of commandsâ€”that the browser executes. These scripts are responsible for everything that happens on a page after it's loaded, such as:
                 </p>
                 <ul>
                     <li><b>Handling User Input</b>: What happens when a user clicks a button, submits a form, or hovers over an image.</li>
@@ -70,10 +73,10 @@
                     <li><b>Controlling Behavior</b>: Running timers, animating elements, and performing calculations.</li>
                 </ul>
                 <p>
-                    An example of a JavaScript Command:<br><pre><code>document.getElementById(“demo”).innerHTML = “Hello World!”;</code></pre>
+                    An example of a JavaScript Command:<br><pre><code>document.getElementById(â€œdemoâ€).innerHTML = â€œHello World!â€;</code></pre>
                 </p>
                 <p>
-                    This simple, single line of code is like an instruction for the browser. What it’s basically telling the browser to do is, in the HTML file, find the element with and ID whose value is “demo” and change the text inside this element to ‘Hello World!’. This ability to manipulate HTML is what makes JavaScript the action layer of the web.
+                    This simple, single line of code is like an instruction for the browser. What itâ€™s basically telling the browser to do is, in the HTML file, find the element with and ID whose value is â€œdemoâ€ and change the text inside this element to â€˜Hello World!â€™. This ability to manipulate HTML is what makes JavaScript the action layer of the web.
                 </p>
                 <p>
                     <b>Conclusion:</b><br>In summary, JavaScript (JS) is the programming language that provides the dynamic behavior and interactive functionality for every webpage. It acts as the "brain and muscles" of a website, running scripts that execute commands, respond to user actions, and manage logic.
@@ -88,7 +91,7 @@
                 </ul>
                 <p>Thank you for reading and have a wonderful rest of your day.</p>
             </div>
-            <a href="../blog.html" class="back-link">← Back to all posts</a>
+            <a href="../blog.html" class="back-link">â† Back to all posts</a>
         </div>
     </main>
 
@@ -102,5 +105,13 @@
             <p>&copy; 2025 KT</p>
         </div>
     </footer>
-</body>
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const headerLinks = document.getElementById('header-links');
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        headerLinks.classList.toggle('nav-open');
+      });
+    </script>
+  </body>
 </html>

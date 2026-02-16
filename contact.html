@@ -17,7 +17,10 @@
     <div class="container">
       <div class="header-content">
         <div class="logo"><img src="Images/avatar.png" alt="Avatar" class="header-avatar"></div>
-        <div class="header-links">
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="header-links" id="header-links">
           <nav class="nav">
               <a href="index.html">Home</a>
               <a href="aboutme.html">About</a>
@@ -47,7 +50,7 @@
           <form id="contactForm">
             <label for="name">✦ Name<span>*</span></label>
             <input type="text" name="name"  required>
-            <label for="email">✉ Email<span>*</span></label>
+            <label for="email">✉️ Email<span>*</span></label>
             <input type="email" name="email" required>
             <label for="message">Message<span>*</span></label>
             <textarea name="message" rows="5" required></textarea>
@@ -77,5 +80,13 @@
       <p>&copy; 2026 KT</p>
     </div>
   </footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const headerLinks = document.getElementById('header-links');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      headerLinks.classList.toggle('nav-open');
+    });
+  </script>
 </body>
 </html>

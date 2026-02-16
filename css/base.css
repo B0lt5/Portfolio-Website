@@ -70,13 +70,80 @@
   .nav a:hover::before {
     width: 100%;
   }
-  
-  /*.nav a:hover {
-    color: black;
+
+  /* Hamburger button — hidden on desktop */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: auto;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
     background-color: gold;
-    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
-    border-bottom: 2px solid currentColor;
-  }*/
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+
+  /* Animate hamburger into X when open */
+  .hamburger.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  @media (max-width: 768px) {
+    .header-content {
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+
+    .header-links {
+      width: 100%;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.35s ease;
+    }
+
+    .header-links.nav-open {
+      max-height: 300px;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 0 15px;
+      gap: 5px;
+    }
+
+    .nav a {
+      margin-left: 0;
+      padding: 8px 0;
+      font-size: 18px;
+      width: 100%;
+    }
+
+    .nav a::before {
+      display: none;
+    }
+  }
 
   h1 .fa-solid,
   h1 .fa-brands,
@@ -130,9 +197,6 @@
     box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
   }
   
-  /* .social-links a:active {
-    transform: translateY(0);
-  } */
   
   .footer p {
     color: gold;

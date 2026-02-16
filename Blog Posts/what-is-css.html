@@ -13,7 +13,10 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo"><img src="../Images/avatar.png" alt="Avatar" class="header-avatar"></div>
-                <div class="header-links">
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                  <span></span><span></span><span></span>
+                </button>
+                <div class="header-links" id="header-links">
                     <nav class="nav">
                         <a href="../index.html">Home</a>
                         <a href="../aboutme.html">About</a>
@@ -48,15 +51,15 @@
                 </p>
                 <p>
                     <b>Let’s break it down even further</b><br>
-                    C – Cascading<br>
-                    S – Style<br>
-                    S – Sheets
+                    C â€“ Cascading<br>
+                    S â€“ Style<br>
+                    S â€“ Sheets
                 </p>
                 <p>
                     <b>Cascading</b><br>The term “cascading” refers to the specific priority scheme for applying styles.
                 </p>
                 <p>
-                    The “cascading” principle is a set of rules the browser uses to decide which style takes priority and is applied. On a single webpage, it’s possible to have multiple CSS rules that target the exact same HTML element, but the cascading principle is what the browser uses to decide which of the styles to apply.
+                    The â€œcascadingâ€ principle is a set of rules the browser uses to decide which style takes priority and is applied. On a single webpage, itâ€™s possible to have multiple CSS rules that target the exact same HTML element, but the cascading principle is what the browser uses to decide which of the styles to apply.
                 </p>
                 <p>
                     <b>Style</b><br>In the context of CSS, Style refers to the visual appearance, aesthetics, and layout of the content on a web page. This is where you determine what an element looks like. Do you want your paragraph text to be black, or blue? Do you want a heading to be 20 pixels in size? These are style attributes.
@@ -65,13 +68,13 @@
                     Unlike HTML, which uses markup tags to define structure , CSS uses a rule-based syntax to apply these specific styles to HTML elements. A CSS rule is made up of three main parts:
                 </p>
                 <ol>
-                    <li><b>Selector</b>: This is what targets the specified HTML element you want to style. For example, if you want to style a paragraph, you’ll use *p* and if you want to style a heading, you’ll use between <span class="pill-style">h1</span> and <span class="pill-style">h6</span>, depending on the type of heading you’re styling.</li>
-                    <li><b>Property</b>: This is a specific style attribute that you want to change. For example, By default the text on a webpage is black, if you want to change it to another color, you’ll change the <span class="pill-style">color</span> property or you want to increase the size of the text, you adjust the <span class="pill-style">font-size</span> property.</li>
+                    <li><b>Selector</b>: This is what targets the specified HTML element you want to style. For example, if you want to style a paragraph, youâ€™ll use *p* and if you want to style a heading, youâ€™ll use between <span class="pill-style">h1</span> and <span class="pill-style">h6</span>, depending on the type of heading youâ€™re styling.</li>
+                    <li><b>Property</b>: This is a specific style attribute that you want to change. For example, By default the text on a webpage is black, if you want to change it to another color, youâ€™ll change the <span class="pill-style">color</span> property or you want to increase the size of the text, you adjust the <span class="pill-style">font-size</span> property.</li>
                     <li><b>Value</b>: This is the setting you want to assign to the property. Like stated above, you want to change the color of an element, you change the value of <span class="pill-style">color</span> property or you want the size of the text to be bigger, you change the value of the <span class="pill-style">font-size</span> property. For example, you want the color of an element to be blue, you change the <span class="pill-style">color</span> property to blue and if you want the text to be bigger, you set the <span class="pill-style">font-size</span> property to 20px.</li>
                 </ol>
                 <br>
                 <p>
-                    N.B: “px” stands for pixels, which is the standard unit for measurement in CSS. Normally, you use centimeters or meters to 	measure things but CSS has it’s own unit of measurement
+                    N.B: â€œpxâ€ stands for pixels, which is the standard unit for measurement in CSS. Normally, you use centimeters or meters to 	measure things but CSS has itâ€™s own unit of measurement
                 </p>
                 <p>
                     N.B: The Property and Value make up the Declaration, which is enclosed in curly braces *{}*.
@@ -101,7 +104,7 @@
                     Thank you for reading and have a wonderful rest of your day.
                 </p>
             </div>
-            <a href="../blog.html" class="back-link">← Back to all posts</a>
+            <a href="../blog.html" class="back-link">â† Back to all posts</a>
         </div>
     </main>
 
@@ -115,6 +118,14 @@
             <p>&copy; 2025 KT</p>
         </div>
     </footer>
-</body>
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const headerLinks = document.getElementById('header-links');
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        headerLinks.classList.toggle('nav-open');
+      });
+    </script>
+  </body>
 
 </html>

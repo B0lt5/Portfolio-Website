@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANNOUNCEMENT 🔊🔊 - We're MOving to a New Site - Portfolio Website</title>
+    <title>ANNOUNCEMENT 🔔🔔 - We're Moving to a New Site - Portfolio Website</title>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/blog-post.css">
     <link rel="icon" type="image/png" href="../Images/briefcase.png">
@@ -13,7 +13,10 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo"><img src="../Images/avatar.png" alt="Avatar" class="header-avatar"></div>
-                <div class="header-links">
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                  <span></span><span></span><span></span>
+                </button>
+                <div class="header-links" id="header-links">
                     <nav class="nav">
                         <a href="../index.html">Home</a>
                         <a href="../aboutme.html">About</a>
@@ -28,7 +31,7 @@
 
     <main class="blog-post">
         <div class="container">
-            <h1 class="post-title">ANNOUNCEMENT 🔊🔊 - We're Moving to a New Site</h1>
+            <h1 class="post-title">ANNOUNCEMENT 🔔🔔 - We're Moving to a New Site</h1>
              <div class="author-info">
                 <img src="../Images/avatar.png" alt="Your Name" class="author-avatar">
                 <span>KT • October 20, 2025</span>
@@ -60,9 +63,9 @@
                 <p>
                     I want to make sure you don't miss a thing! Please click the link above, explore the new design, and get ready for the content I have planned.
                 </p>
-                <p>Thank you again for reading, and for your incredible support here. I can’t wait to welcome you to our new home!  See you there.👋</p>
+                <p>Thank you again for reading, and for your incredible support here. I canâ€™t wait to welcome you to our new home!  See you there.ðŸ‘‹</p>
             </div>
-            <a href="../blog.html" class="back-link">← Back to all posts</a>
+            <a href="../blog.html" class="back-link">â† Back to all posts</a>
         </div>
     </main>
 
@@ -76,5 +79,13 @@
             <p>&copy; 2025 KT</p>
         </div>
     </footer>
-</body>
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const headerLinks = document.getElementById('header-links');
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        headerLinks.classList.toggle('nav-open');
+      });
+    </script>
+  </body>
 </html>

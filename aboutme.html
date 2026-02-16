@@ -16,7 +16,10 @@
     <div class="container">
       <div class="header-content">
         <div class="logo"><img src="Images/avatar.png" alt="Avatar" class="header-avatar"></div>
-        <div class="header-links">
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="header-links" id="header-links">
           <nav class="nav">
             <a href="index.html">Home</a>
             <a href="aboutme.html" class="active">About</a>
@@ -108,13 +111,16 @@
 
       <br>
 
-      <div class="hobbies-section">
-        <h2 class="hobbies-title">HOBBIES</h2>
-        <ul class="hobbies-list">
-          <li><span>I enjoy playing games 🎮</span></li>
+      <div class="interests-section">
+        <h2 class="interests-title">INTERESTS</h2>
+        <ul class="interests-list">
+          <!-- <li><span>I enjoy playing games 🎮</span></li>
           <li><span>I enjoy reading Novels, Comics & Mangas 📚</span></li>
-          <li><span>I enjoy watching Anime, Movies & TV Shows 📺</span></li>
-          <li><span>I also find researching things very interesting 🔎</span></li>
+          <li><span>I enjoy watching Anime, Movies & TV Shows 🎬</span></li>
+          <li><span>I also find researching things very interesting 🔍</span></li> -->
+          <li><span>Game Design &amp; Interactive Media</span></li>
+          <li><span>Storytelling &amp; Narrative</span></li>
+          <li><span>Technology &amp; Research</span></li>
         </ul>
       </div>
 
@@ -132,6 +138,14 @@
       <p>&copy; 2026 KT</p>
     </div>
   </footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const headerLinks = document.getElementById('header-links');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      headerLinks.classList.toggle('nav-open');
+    });
+  </script>
 </body>
 </html>
 

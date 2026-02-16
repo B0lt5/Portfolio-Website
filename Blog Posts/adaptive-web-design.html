@@ -13,7 +13,10 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo"><img src="../Images/avatar.png" alt="Avatar" class="header-avatar"></div>
-                <div class="header-links">
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                  <span></span><span></span><span></span>
+                </button>
+                <div class="header-links" id="header-links">
                     <nav class="nav">
                         <a href="../index.html">Home</a>
                         <a href="../aboutme.html">About</a>
@@ -83,11 +86,11 @@
                     This approach provides dedicated control over the user experience for specific device categories and is often associated with progressive enhancement.
                 </p>
                 <p>
-                    While both adaptive and responsive designs aim for cross-device accessibility, they differ in their method—static, multiple layouts versus a single, fluid layout. Ultimately, developers often employ a hybrid strategy, blending the best features of both to create a robust and highly optimized web presence for all users.
+                    While both adaptive and responsive designs aim for cross-device accessibility, they differ in their methodâ€”static, multiple layouts versus a single, fluid layout. Ultimately, developers often employ a hybrid strategy, blending the best features of both to create a robust and highly optimized web presence for all users.
                 </p>
                 <p>Thank you for reading and have a wonderful rest of your day.</p>
             </div>
-            <a href="../blog.html" class="back-link">← Back to all posts</a>
+            <a href="../blog.html" class="back-link">â† Back to all posts</a>
         </div>
     </main>
 
@@ -101,5 +104,13 @@
             <p>&copy; 2025 KT</p>
         </div>
     </footer>
-</body>
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const headerLinks = document.getElementById('header-links');
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        headerLinks.classList.toggle('nav-open');
+      });
+    </script>
+  </body>
 </html>

@@ -38,10 +38,12 @@
 }
 
 .about img {
-  width: 700px;
-  height: 800px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
   border: 3px solid gold;
   border-radius: 12px;
+  object-fit: cover;
 }
 
 .btn {
@@ -113,9 +115,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 190px;
+  gap: 250px;
   margin-top: 50px;
-  flex-wrap: wrap; /* Ensures it stacks on mobile */
+  flex-wrap: wrap;
 }
 
 /* Adjusting the existing timeline width to make room */
@@ -238,10 +240,6 @@
 }
 
 .skill-box {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
   justify-content: center;
   font-weight: bold;
   font-size: 1.2rem;
@@ -249,8 +247,6 @@
   border: 3px solid black;
   border-radius: 4px;
   
-  /* The "3D" Shadow effect: 
-     First shadow is the color, second is the black bottom-right shadow */
   box-shadow: 4px 4px 0px rgba(212, 175, 55, 0.4);
   transition: transform 0.1s;
   cursor: pointer;
@@ -268,12 +264,12 @@
 .js-style   { background-color: #f7df1e; border-color: #d4bf1a; color: black; }
 .python-style { background-color: #3776ab; border-color: #2b5b84; }
 
-.hobbies-section {
+.interests-section {
   margin-top: 50px;
   font-family: 'Courier New', Courier, monospace;
 }
 
-.hobbies-title {
+.interests-title {
   color: #ffffff;
   font-size: 2rem;
   border-bottom: 3px solid gold;
@@ -283,12 +279,12 @@
   text-transform: uppercase;
 }
 
-.hobbies-list {
+.interests-list {
   list-style: none; /* Removes default dots */
   padding-left: 0;
 }
 
-.hobbies-list li {
+.interests-list li {
   position: relative;
   padding-left: 25px; /* Space for the custom bullet */
   margin-bottom: 15px;
@@ -299,7 +295,7 @@
 }
 
 /* Custom "Pixel" Bullet Point */
-.hobbies-list li::before {
+.interests-list li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -307,17 +303,15 @@
   height: 10px;
   background-color: black;
   border: 2px solid white;
-  /* Making it a square for a more "bit-style" look, 
-     or 50% for a circle like your timeline nodes */
   border-radius: 2px; 
 }
 
-.hobbies-list li span {
+.interests-list li span {
   /* Adds a slight hover effect to the text */
   transition: transform 0.2s;
 }
 
-.hobbies-list li:hover span {
+.interests-list li:hover span {
   transform: translateX(5px);
   color: gold;
   cursor: default;
@@ -344,16 +338,62 @@
 
   .about-me p {
     font-size: 16px;
-    padding: 0 20px;
+    padding: 0 10px;
   }
 
-  .skills {
-    padding: 0 20px;
+  /* Timeline: shrink padding and font so it doesn't overflow */
+  .timeline-container {
+    padding: 10px;
+    max-width: 100%;
   }
 
-  .skill-item {
-    margin-left: 0;
-    margin-right: 0;
+  .title {
+    font-size: 1.8rem;
   }
 
+  .timeline-grid {
+    height: 80px;
+    margin-top: 30px;
+  }
+
+  .year, .label {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  /* Hide the dashed extension on very small screens so it doesn't clip */
+  .timeline-grid::after {
+    display: none;
+  }
+
+  .timeline-pic {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .timeline-section-wrapper {
+    gap: 20px;
+  }
+
+  /* Skills */
+  .skills-section {
+    margin-top: 30px;
+  }
+
+  .skills-title {
+    font-size: 1.6rem;
+  }
+
+  /* interests */
+  .interests-section {
+    margin-top: 30px;
+  }
+
+  .interests-title {
+    font-size: 1.6rem;
+  }
+
+  .interests-list li {
+    font-size: 1rem;
+  }
 }

@@ -184,3 +184,29 @@
 #project-btn:active {
   transform: translateY(0);
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects h1 {
+    font-size: 28px;
+  }
+
+  section #middle-text {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .modal-content {
+    width: 95%;
+    margin: 10% auto;
+  }
+
+  .game-iframe {
+    height: 400px;
+  }
+}

@@ -13,7 +13,10 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo"><img src="../Images/avatar.png" alt="Avatar" class="header-avatar"></div>
-                <div class="header-links">
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                  <span></span><span></span><span></span>
+                </button>
+                <div class="header-links" id="header-links">
                     <nav class="nav">
                         <a href="../index.html">Home</a>
                         <a href="../aboutme.html">About</a>
@@ -69,8 +72,8 @@
                     The visual appeal and user-friendliness of a website, which are the main focus of frontend development, originate with <b>UI/UX Designers</b>.
                 </p>
                 <ul>
-                    <li><b>UI (User Interface) Design</b> focuses on the aesthetics of the website — what the user sees, such as colors, typography, buttons, and layout.</li>
-                    <li><b>UX (User Experience) Design</b> focuses on how the user interacts with the site — ensuring the website is easy, efficient, and enjoyable to navigate.</li>
+                    <li><b>UI (User Interface) Design</b> focuses on the aesthetics of the website â€” what the user sees, such as colors, typography, buttons, and layout.</li>
+                    <li><b>UX (User Experience) Design</b> focuses on how the user interacts with the site â€” ensuring the website is easy, efficient, and enjoyable to navigate.</li>
                 </ul>
                 <p>
                     The frontend developer's primary role is to take the polished visual and interactive blueprints created by the UI/UX designers and translate them into functional, production-ready code using HTML, CSS, and JavaScript. This means a frontend developer often collaborates closely with UI/UX designers to bring a product from concept to a polished, functional website.
@@ -182,7 +185,7 @@
                 <br>
                 <img src="../Images/your-image-9c.png" alt="ui-ux-design" class="post-image" style="width: 50%; height:50%; margin-left: 150px;">
                 <p>
-                    While frontend and backend development are distinct specializations, a Full Stack Developer is proficient in working across both. A full-stack developer has the skills to handle all layers of a web application — from the visual user interface (frontend) to the server logic and database management (backend). This role requires a comprehensive understanding of both client-side and server-side operations, making full-stack developers versatile and highly valued. This breadth of knowledge allows them to:
+                    While frontend and backend development are distinct specializations, a Full Stack Developer is proficient in working across both. A full-stack developer has the skills to handle all layers of a web application â€” from the visual user interface (frontend) to the server logic and database management (backend). This role requires a comprehensive understanding of both client-side and server-side operations, making full-stack developers versatile and highly valued. This breadth of knowledge allows them to:
                 </p>
                 <ul>
                     <li>Understand and manage the entire web application process from concept to deployment.</li>
@@ -203,9 +206,9 @@
                 <p>
                     Understanding these distinct but interconnected domains is key to appreciating how modern web applications function. Whether a developer specializes in one area or masters both as a Full Stack Developer, the ultimate goal is the same: to deliver a seamless, efficient, and secure digital experience.
                 </p>
-                <p>Thank you for reading and have a wonderful rest of your day.👋</p>
+                <p>Thank you for reading and have a wonderful rest of your day.ðŸ‘‹</p>
             </div>
-            <a href="../blog.html" class="back-link">← Back to all posts</a>
+            <a href="../blog.html" class="back-link">â† Back to all posts</a>
         </div>
     </main>
 
@@ -219,5 +222,13 @@
             <p>&copy; 2025 KT</p>
         </div>
     </footer>
-</body>
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const headerLinks = document.getElementById('header-links');
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        headerLinks.classList.toggle('nav-open');
+      });
+    </script>
+  </body>
 </html>
