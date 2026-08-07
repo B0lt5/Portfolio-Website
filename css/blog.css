@@ -144,3 +144,9 @@
 section a:hover {
     color: gold;
 }
+
+.no-results {
+    color: #888;
+    font-size: 16px;
+    margin-top: 20px;
+}

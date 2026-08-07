@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/blog-post.css">
     <link rel="icon" type="image/png" href="../Images/briefcase.png">
+    <script src="https://kit.fontawesome.com/8e0278b98b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
@@ -50,13 +51,13 @@
                     If HTML is the "bones" (structure) and CSS is the "skin" and "clothes" (style), then JavaScript is the "muscles" and "brain" (functionality and behavior) of the website. It allows the page to respond to user actions and manage complex tasks. A page without JavaScript is static; a page with JavaScript comes alive and becomes interactive.
                 </p>
                 <p>
-                    <b>Let’s Break It Down</b><br>J – Java<br>S – Script
+                    <b>Let's Break It Down</b><br>J – Java<br>S – Script
                 </p>
                 <p>
                     <b>Java</b><br>This is the tricky part! The "Java" in JavaScript is primarily a historical naming convention and is often confusing.
                 </p>
                 <p>
-                    Is JavaScript related to Java? The simplest answer to this question is No, and here’s why:
+                    Is JavaScript related to Java? The simplest answer to this question is No, and here's why:
                 </p>
                 <p>
                     JavaScript was developed at Netscape during a time when the programming language Java was highly popular. The name was chosen largely for marketing reasons to capitalize on Java's popularity. They are two entirely different languages built for different purposes. JavaScript is interpreted and runs primarily in a web browser, while Java is a compiled language often used for back-end enterprise applications.
@@ -65,7 +66,7 @@
                     <b>Script</b><br>While HTML is a declarative markup language and CSS is a style sheet language, JavaScript is a <b>true programming language</b>. This means it can execute complex instructions, manage data, and perform logical operations.
                 </p>
                 <p>
-                    JavaScript allows developers to write scriptsâ€”or sets of commandsâ€”that the browser executes. These scripts are responsible for everything that happens on a page after it's loaded, such as:
+                    JavaScript allows developers to write scripts—or sets of commands—that the browser executes. These scripts are responsible for everything that happens on a page after it's loaded, such as:
                 </p>
                 <ul>
                     <li><b>Handling User Input</b>: What happens when a user clicks a button, submits a form, or hovers over an image.</li>
@@ -73,10 +74,10 @@
                     <li><b>Controlling Behavior</b>: Running timers, animating elements, and performing calculations.</li>
                 </ul>
                 <p>
-                    An example of a JavaScript Command:<br><pre><code>document.getElementById(â€œdemoâ€).innerHTML = â€œHello World!â€;</code></pre>
+                    An example of a JavaScript Command:<br><pre><code>document.getElementById("demo").innerHTML = "Hello World!";</code></pre>
                 </p>
                 <p>
-                    This simple, single line of code is like an instruction for the browser. What itâ€™s basically telling the browser to do is, in the HTML file, find the element with and ID whose value is â€œdemoâ€ and change the text inside this element to â€˜Hello World!â€™. This ability to manipulate HTML is what makes JavaScript the action layer of the web.
+                    This simple, single line of code is like an instruction for the browser. What it's basically telling the browser to do is, in the HTML file, find the element with and ID whose value is "demo" and change the text inside this element to 'Hello World!'. This ability to manipulate HTML is what makes JavaScript the action layer of the web.
                 </p>
                 <p>
                     <b>Conclusion:</b><br>In summary, JavaScript (JS) is the programming language that provides the dynamic behavior and interactive functionality for every webpage. It acts as the "brain and muscles" of a website, running scripts that execute commands, respond to user actions, and manage logic.
@@ -91,27 +92,20 @@
                 </ul>
                 <p>Thank you for reading and have a wonderful rest of your day.</p>
             </div>
-            <a href="../blog.html" class="back-link">â† Back to all posts</a>
+            <a href="../blog.html" class="back-link">← Back to all posts</a>
         </div>
     </main>
 
     <footer class="footer">
         <div class="container">
             <div class="social-links">
-                <a>LinkedIn</a>
-                <a href="https://github.com/B0lt5" target="_blank">GitHub</a>
-                <a href="https://x.com/oluwakitan17466" target="_blank">Twitter</a>
+                <a href="https://www.linkedin.com/in/kitan-ayoola-1471193a1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in fa-1x"></i></a>
+                <a href="https://github.com/B0lt5" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-1x"></i></a>
+                <a href="https://x.com/oluwakitan17466" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) profile"><i class="fa-brands fa-x-twitter fa-1x"></i></a>
             </div>
             <p>&copy; 2025 KT</p>
         </div>
     </footer>
-    <script>
-      const hamburger = document.getElementById('hamburger');
-      const headerLinks = document.getElementById('header-links');
-      hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('open');
-        headerLinks.classList.toggle('nav-open');
-      });
-    </script>
+    <script src="../scripts/nav.js"></script>
   </body>
 </html>

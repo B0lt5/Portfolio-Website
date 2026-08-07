@@ -101,14 +101,13 @@
     color: black;
   }
 
-  span {
+  .contact-form label span {
     color: red;
   }
 
   .form-footer {
     font-size: 14px;
     color: gray;
-    margin-top: -10px;
     text-align: center;
     margin-top: 10px;
   }

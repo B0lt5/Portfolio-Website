@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const name = form.name.value.trim();
             const email = form.email.value.trim();
             const message = form.message.value.trim();
+            const websiteField = form.elements.namedItem('website');
+            const website = websiteField ? websiteField.value : '';
             const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
             if (!name || !email || !message) {
@@ -52,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         'Content-Type': 'application/json',
                         'Accept': 'application/json'
                     },
-                    body: JSON.stringify({ name, email, message })
+                    body: JSON.stringify({ name, email, message, website })
                 });
 
                 const data = await response.json();

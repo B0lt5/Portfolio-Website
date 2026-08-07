@@ -341,7 +341,7 @@
     padding: 0 10px;
   }
 
-  /* Timeline: shrink padding and font so it doesn't overflow */
+  /* Timeline: switch to a vertical layout on mobile */
   .timeline-container {
     padding: 10px;
     max-width: 100%;
@@ -349,21 +349,55 @@
 
   .title {
     font-size: 1.8rem;
+    margin-bottom: 30px;
   }
 
   .timeline-grid {
-    height: 80px;
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    border-bottom: none;
+    border-left: 3px solid gold;
+    margin: 20px 0 0 18px;
+    padding: 0 0 10px 25px;
+    gap: 28px;
   }
 
-  .year, .label {
-    font-size: 11px;
-    white-space: nowrap;
-  }
-
-  /* Hide the dashed extension on very small screens so it doesn't clip */
+  /* Hide the dashed end-extension on mobile */
   .timeline-grid::after {
     display: none;
+  }
+
+  .item {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Node dot centered on the vertical line */
+  .item .node {
+    position: absolute;
+    left: -29px;
+    top: 5px;
+    margin-bottom: 0;
+  }
+
+  .item .year {
+    position: static;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+
+  .item .label {
+    position: static;
+    display: block;
+    top: auto;
+    font-size: 12px;
+    white-space: normal;
+    text-align: left;
+    line-height: 1.4;
   }
 
   .timeline-pic {

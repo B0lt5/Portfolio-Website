@@ -6,6 +6,15 @@
   <meta name="description" content="This is Ayoola Kitan's portfolio website. I am an Aspiring web developer.">
   <meta name="google-site-verification" content="vFj80uWqeJlZdr1Y-kZZOkyjAFfjKypaCuzWmjSD-tc" />
   <title>Home - Portfolio Website</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ayoola Kitan — Aspiring Web Developer">
+<meta property="og:description" content="This is Ayoola Kitan's portfolio website. I am an aspiring web developer.">
+<meta property="og:url" content="https://kt-portfolio-website.vercel.app/">
+<meta property="og:image" content="https://kt-portfolio-website.vercel.app/Images/home-img.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ayoola Kitan — Aspiring Web Developer">
+<meta name="twitter:description" content="This is Ayoola Kitan's portfolio website. I am an aspiring web developer.">
+<meta name="twitter:image" content="https://kt-portfolio-website.vercel.app/Images/home-img.jpg">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/home.css">
   <link rel="icon" type="image/png" href="Images/briefcase.png">
@@ -37,7 +46,7 @@
   <section id="home" class="hero">
     <div class="container">
       <div class="hero-content">
-        <img src="Images/home-img.jpg" alt="Avatar" class="avatar" loading="lazy">
+        <img src="Images/home-img.jpg" alt="Avatar" class="avatar">
         <div class="header-text">
           <h1>Hey there 👋,<br>My name's Ayoola Kitan</h1>
           <h2>Aspiring Web Developer</h2>
@@ -55,39 +64,18 @@
   <footer class="footer">
     <div class="container">
       <div class="social-links">
-        <a href="https://www.linkedin.com/in/kitan-ayoola-1471193a1/" target="_blank"><i class="fa-brands fa-linkedin-in fa-1x"></i></a>
-        <a href="https://github.com/B0lt5" target="_blank"><i class="fa-brands fa-github fa-1x"></i></a>
-        <a href="https://x.com/oluwakitan17466" target="_blank"><i class="fa-brands fa-x-twitter fa-1x"></i></a>
+        <a href="https://www.linkedin.com/in/kitan-ayoola-1471193a1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in fa-1x"></i></a>
+        <a href="https://github.com/B0lt5" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-1x"></i></a>
+        <a href="https://x.com/oluwakitan17466" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) profile"><i class="fa-brands fa-x-twitter fa-1x"></i></a>
       </div>
       <p>&copy; 2026 KT</p>
     </div>
   </footer>
   
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const headerLinks = document.getElementById('header-links');
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('open');
-      headerLinks.classList.toggle('nav-open');
-    });
-  </script>
-  <script>
-    window.va =
-      window.va ||
-        function () {
-          (window.vaq = window.vaq || []).push(arguments);
-          };
-  </script>
+  <script src="scripts/nav.js"></script>
+  <script src="scripts/analytics.js"></script>
   <script defer src="/_vercel/insights/script.js"></script>
-
-  <script>
-  window.vitals =
-    window.vitals ||
-    function() {
-      (window.vitalsq = window.vitalsq || []).push(arguments);
-    };
-</script>
-<script defer src="/_vercel/speed-insights/script.js"></script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
 </body>
 </html>
 

@@ -2,7 +2,6 @@
   "name": "portfolio-website",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,7 +18,6 @@
   },
   "homepage": "https://github.com/B0lt5/Portfolio-Website#readme",
   "dependencies": {
-    "mongoose": "^9.2.1",
-    "node-fetch": "^3.3.2"
+    "mongoose": "^9.2.1"
   }
 }
