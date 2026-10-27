@@ -1,182 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ayoola Kitan's portfolio website. Aspiring web developer and Python enthusiast.">
-  <title>Projects - Portfolio Website</title>
-<meta property="og:type" content="website">
-<meta property="og:title" content="Projects — Ayoola Kitan">
-<meta property="og:description" content="A showcase of current and past projects, including a playable memory game.">
-<meta property="og:url" content="https://kt-portfolio-website.vercel.app/project.html">
-<meta property="og:image" content="https://kt-portfolio-website.vercel.app/Images/home-img.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Projects — Ayoola Kitan">
-<meta name="twitter:description" content="A showcase of current and past projects, including a playable memory game.">
-<meta name="twitter:image" content="https://kt-portfolio-website.vercel.app/Images/home-img.jpg">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/project.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-  <link rel="icon" type="image/png" href="Images/briefcase.png">
-  <script src="https://kit.fontawesome.com/8e0278b98b.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <!-- Header Section -->
-  <header class="header">
-    <div class="container">
-      <div class="header-content">
-        <div class="logo"><img src="Images/avatar.png" alt="Avatar" class="header-avatar"></div>
-        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-          <span></span><span></span><span></span>
-        </button>
-        <div class="header-links" id="header-links">
-          <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="aboutme.html">About</a>
-            <a href="blog.html">Blog</a>
-            <a href="project.html" class="active">Projects</a>
-            <a href="contact.html">Contact</a>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <h1>My Projects <i class="fa-solid fa-laptop-code fa-1x"></i></h1>
-      <hr>
-      <h2 id="middle-text">These are my latest projects.<br>You can check the source code of any of them on GitHub.<br>If you have any improvements you can make a pull request and I'll review it.</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <img src="Images/the-dev-anvil.webp" alt="Picture of The Dev Anvil" class="project-image" loading="lazy">
-          <h2>The Dev Anvil</h2>
-          <p>A platform for developers to showcase their projects and connect with others.</p>
-          <p>Technologies: </p>
-          <div style="margin-bottom: 15px;">
-            <i class="devicon-html5-plain colored" style="font-size: 2rem;"></i>
-            <i class="devicon-css3-plain colored" style="font-size: 2rem;"></i>
-          </div>
-          <div class="project-links">
-            <a href="https://the-dev-anvil.vercel.app" target="_blank" rel="noopener noreferrer" class="btn">Live Website</a>
-            <a href="https://github.com/B0lt5/the-dev-anvil" target="_blank" rel="noopener noreferrer" class="btn">Source Code</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <img src="Images/to-do-list-app.png" alt="Picture of My To-Do List App" class="project-image" loading="lazy">
-          <h2>TaskForge</h2>
-          <p>A simple To-Do List App built that allows users to create, update, and delete tasks.</p>
-          <p>Technologies: </p>
-          <div style="margin-bottom: 15px;">
-            <i class="devicon-html5-plain colored" style="font-size: 2rem;"></i>
-            <i class="devicon-css3-plain colored" style="font-size: 2rem;"></i>
-            <i class="devicon-tailwindcss-plain colored" style="font-size: 2rem;"></i>
-            <i class="devicon-javascript-plain colored" style="font-size: 2rem;"></i>
-          </div>
-          <div class="project-links">
-            <a href="https://kt-task-forge.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn">Live Website</a>
-            <a href="https://github.com/B0lt5/ToDo-List" target="_blank" rel="noopener noreferrer" class="btn">Source Code</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <img src="Images/demon-slayer-memory-game.png" alt="Picture of my Demon Slayer Memory Game" class="project-image" loading="lazy">
-          <h2>Demon Slayer Memory Game</h2>
-          <p>This is my Demon Slayer Memory Game, a fun game that challenges your memory skills.</p>
-          <p>Technologies: </p>
-          <div style="margin-bottom: 15px;">
-            <i class="devicon-html5-plain colored" style="font-size: 2rem;"></i>
-            <i class="devicon-css3-plain colored" style="font-size: 2rem;"></i>
-            <i class="devicon-javascript-plain colored" style="font-size: 2rem;"></i>
-          </div>
-          <div class="project-links">
-            <button id="showGameBtn" class="btn">Play Game</button>
-            <a href="https://github.com/B0lt5/Memory-Game" target="_blank" rel="noopener noreferrer" class="btn">Source Code</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <img src="Images/resume-website.webp" alt="Picture of my Resume Website" class="project-image" loading="lazy">
-          <h2>Resume Website</h2>
-          <p>This is my resume website that shows my resume, biography and academic and professional accomplishments.</p>
-          <p>Technologies: </p>
-          <div style="margin-bottom: 15px;">
-            <i class="devicon-html5-plain colored" style="font-size: 2rem;"></i>
-            <i class="devicon-css3-plain colored" style="font-size: 2rem;"></i>
-            <i class="devicon-javascript-plain colored" style="font-size: 2rem;"></i>
-          </div>
-          <div class="project-links">
-            <a href="https://my-online-resume-sepia.vercel.app" target="_blank" rel="noopener noreferrer" class="btn">Live Website</a>
-            <a href="https://github.com/B0lt5/my-online-resume" target="_blank" rel="noopener noreferrer" class="btn">Source Code</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <img src="Images/weather-app.webp" alt="Picture of My Weather App" class="project-image" loading="lazy">
-          <h2>Weather App</h2>
-          <p>A simple, responsive Weather App that displays current weather information of a given location.</p>
-          <p>Technologies: </p>
-          <div style="margin-bottom: 15px;">
-            <i class="devicon-html5-plain colored" style="font-size: 2rem;"></i>
-            <i class="devicon-css3-plain colored" style="font-size: 2rem;"></i>
-            <i class="devicon-javascript-plain colored" style="font-size: 2rem;"></i>
-          </div>
-          <div class="project-links">
-            <p><b>Status: Still in Development</b></p>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <img src="Images/python-game-collection.png" alt="Picture of my Python Game Collection Script" class="project-image" loading="lazy">
-          <h2>Python Game Collection</h2>
-          <p>A single python script with a collection of simple text-based games with a GUI.</p>
-          <p>Technologies: </p>
-          <div style="margin-bottom: 15px;">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python Logo" style="width: 3rem; height: 3rem;">
-          </div>
-          <div class="project-links">
-            <p><b>Status: Still in Development</b></p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore web development projects by Ayoola Kitan, from responsive websites and task management tools to interactive games.">
+    <title>Projects | Web Developer for Businesses</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Projects | Ayoola Kitan">
+    <meta property="og:description" content="Explore web development projects by Ayoola Kitan, from responsive websites and task management tools to interactive games.">
+    <meta property="og:url" content="https://kt-portfolio-website.vercel.app/project.html">
+    <meta property="og:image" content="https://kt-portfolio-website.vercel.app/Images/the-dev-anvil.webp">
+    <meta property="og:image:alt" content="Preview of The Dev Anvil, a developer project showcase website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projects | Ayoola Kitan">
+    <meta name="twitter:description" content="Explore web development projects by Ayoola Kitan, from responsive websites and task management tools to interactive games.">
+    <meta name="twitter:image" content="https://kt-portfolio-website.vercel.app/Images/the-dev-anvil.webp">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="icon" type="image/png" href="Images/briefcase.png">
+    <script src="https://kit.fontawesome.com/8e0278b98b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo"><img src="Images/avatar.png" alt="Avatar" class="header-avatar"></div>
+          <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="header-links" id="header-links">
+            <nav class="nav">
+              <a href="index.html">Home</a>
+              <a href="aboutme.html">About</a>
+              <a href="services.html">Services</a>
+              <a href="project.html" class="active">Projects</a>
+              <a href="contact.html">Contact</a>
+            </nav>
           </div>
         </div>
       </div>
-    </div>
+    </header>
 
-    <div id="gameModal" class="modal" style="display: none;">
-      <div class="modal-content">
-        <span class="close-btn">&times;</span>
-        <div id="gameContainer">
-          <h3>Demon Slayer Memory Game</h3>
-          <iframe
-          src="https://memory-game-ashy-alpha.vercel.app"
-          title="Live preview of my Demon Slayer Memory Game"
-          class="game-iframe"
-          ></iframe>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h1>My Projects <i class="fa-solid fa-laptop-code fa-1x"></i></h1>
+        <hr>
+        <h2 id="middle-text">These are the projects I've worked on.<br>You can check the source code of any of them on GitHub.</h2>
+        <div class="project-grid">
+          <article class="project-card project-card-featured">
+            <div class="project-card-top">
+              <p class="project-label">Project 01</p>
+              <div class="project-icon-links">
+                <a href="https://github.com/B0lt5/the-dev-anvil" target="_blank" rel="noopener noreferrer" aria-label="The Dev Anvil source code"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                <a href="https://the-dev-anvil.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="Open The Dev Anvil live project"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="project-intro">
+              <div class="project-description">
+                <h2>The Dev Anvil</h2>
+                <h3>Developer Project Showcase</h3>
+                <p>A platform for developers to showcase their projects and connect with others.</p>
+              </div>
+              <img class="project-preview-image" src="Images/the-dev-anvil.webp" alt="The Dev Anvil developer project showcase website" loading="lazy" decoding="async">
+            </div>
+            <div class="project-details">
+              <section class="project-detail">
+                <h4>Summary</h4>
+                <p>The Dev Anvil is a platform concept designed to help developers showcase their projects and connect with the developer community. The project focuses on presenting information clearly and creating an organised browsing experience.</p>
+              </section>
+              <section class="project-detail">
+                <h4>Key Features</h4>
+                <ul class="project-highlights">
+                  <li>Organised presentation of project information</li>
+                  <li>Structured page layouts and navigation</li>
+                </ul>
+              </section>
+            </div>
+            <p class="project-technologies"><strong>Technologies:</strong> <span>HTML</span><span>CSS</span></p>
+          </article>
+
+          <article class="project-card project-card-featured">
+            <div class="project-card-top">
+              <p class="project-label">Project 02</p>
+              <div class="project-icon-links">
+                <a href="https://github.com/B0lt5/my-online-resume" target="_blank" rel="noopener noreferrer" aria-label="Resume Website source code"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                <a href="https://my-online-resume-sepia.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="Open Resume Website live project"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="project-intro">
+              <div class="project-description">
+                <h2>Resume Website</h2>
+                <h3>Online Resume and Portfolio</h3>
+                <p>A personal website presenting a resume, biography, and academic and professional accomplishments.</p>
+              </div>
+              <img class="project-preview-image" src="Images/resume-website.webp" alt="Online resume and portfolio website" loading="lazy" decoding="async">
+            </div>
+            <div class="project-details">
+              <section class="project-detail">
+                <h4>Summary</h4>
+                <p>A personal website presenting a resume, biography, and academic and professional accomplishments.</p>
+              </section>
+              <section class="project-detail">
+                <h4>Key Features</h4>
+                <ul class="project-highlights">
+                  <li>Presenting personal and professional information</li>
+                  <li>Organizing a resume into a navigable website</li>
+                  <li>Building responsive page layouts</li>
+                </ul>
+              </section>
+            </div>
+            <p class="project-technologies"><strong>Technologies:</strong> <span>HTML</span><span>CSS</span><span>JavaScript</span></p>
+          </article>
+
+          <article class="project-card project-card-featured">
+            <div class="project-card-top">
+              <p class="project-label">Project 03</p>
+              <div class="project-icon-links">
+                <a href="https://github.com/B0lt5/ToDo-List" target="_blank" rel="noopener noreferrer" aria-label="TaskForge source code"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                <a href="https://kt-task-forge.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open TaskForge live project"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="project-intro">
+              <div class="project-description">
+                <h2>TaskForge</h2>
+                <h3>Task Management Application</h3>
+                <p>An interactive task management application designed to help users organize tasks and keep track of their work.</p>
+              </div>
+              <img class="project-preview-image" src="Images/to-do-list-app.png" alt="TaskForge task management application" loading="lazy" decoding="async">
+            </div>
+            <div class="project-details">
+              <section class="project-detail">
+                <h4>Summary</h4>
+                <p>An interactive task management application designed to help users organize tasks and keep track of their work.</p>
+              </section>
+              <section class="project-detail">
+                <h4>Key Features</h4>
+                <ul class="project-highlights">
+                  <li>Interactive user interfaces</li>
+                  <li>Task creation and management</li>
+                  <li>Application logic and state handling</li>
+                </ul>
+              </section>
+            </div>
+            <p class="project-technologies"><strong>Technologies:</strong> <span>HTML</span><span>CSS</span><span>Tailwind CSS</span><span>JavaScript</span></p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-top">
+              <p class="project-label">Project 04</p>
+              <div class="project-icon-links">
+                <a href="https://github.com/B0lt5/Memory-Game" target="_blank" rel="noopener noreferrer" aria-label="Demon Slayer Memory Game source code"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                <a href="https://memory-game-ashy-alpha.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open The Dev Anvil live project"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                <button id="showGameBtn" type="button" aria-label="Open Demon Slayer Memory Game preview"><i class="fa-solid fa-expand" aria-hidden="true"></i></button>
+              </div>
+            </div>
+            <div class="project-intro">
+              <div class="project-description">
+                <h2>Demon Slayer Memory Game</h2>
+                <h3>Interactive Memory Game</h3>
+                <p>A themed memory game that challenges players to find matching character cards.</p>
+              </div>
+              <img class="project-preview-image" src="Images/demon-slayer-memory-game.png" alt="Demon Slayer themed memory game" loading="lazy" decoding="async">
+            </div>
+            <div class="project-details">
+              <section class="project-detail">
+                <h4>Summary</h4>
+                <p>A themed memory game that challenges players to find matching character cards.</p>
+              </section>
+              <section class="project-detail">
+                <h4>Key Features</h4>
+                <ul class="project-highlights">
+                  <li>Interactive game mechanics</li>
+                  <li>Tracking selections and matching pairs</li>
+                  <li>Responsive, themed interface design</li>
+                </ul>
+              </section>
+            </div>
+            <p class="project-technologies"><strong>Technologies:</strong> <span>HTML</span><span>CSS</span><span>JavaScript</span></p>
+          </article>
+
+          <article class="project-card project-in-progress">
+            <div class="project-card-top">
+              <p class="project-label">Project 05</p>
+              <span class="project-status">In development</span>
+            </div>
+            <div class="project-intro">
+              <div class="project-description">
+                <h2>Weather App</h2>
+                <h3>Location-Based Weather Application</h3>
+                <p>A responsive weather app for viewing current weather information for a selected location.</p>
+              </div>
+              <img class="project-preview-image" src="Images/weather-app.webp" alt="Weather application showing location-based weather information" loading="lazy" decoding="async">
+            </div>
+            <div class="project-details">
+              <section class="project-detail">
+                <h4>Summary</h4>
+                <p>A responsive weather app for viewing current weather information for a selected location.</p>
+              </section>
+              <section class="project-detail">
+                <h4>Key Features</h4>
+                <ul class="project-highlights">
+                  <li>Displaying weather information by location</li>
+                  <li>Designing a responsive app interface</li>
+                  <li>Presenting changing data clearly</li>
+                </ul>
+              </section>
+            </div>
+            <p class="project-technologies"><strong>Technologies:</strong> <span>HTML</span><span>CSS</span><span>JavaScript</span></p>
+          </article>
         </div>
       </div>
-    </div>
 
-    <br><br>
-
-    <a href="https://github.com/B0lt5?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn" id="project-btn"><i class="fa-solid fa-up-right-from-square"></i> See more of my work</a>
-  </section>
-
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="container">
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/kitan-ayoola-1471193a1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in fa-1x"></i></a>
-        <a href="https://github.com/B0lt5" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-1x"></i></a>
-        <a href="https://x.com/oluwakitan17466" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) profile"><i class="fa-brands fa-x-twitter fa-1x"></i></a>
+      <div id="gameModal" class="modal" style="display: none;">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div id="gameContainer">
+            <h3>Demon Slayer Memory Game</h3>
+            <iframe src="https://memory-game-ashy-alpha.vercel.app" title="Live preview of my Demon Slayer Memory Game" class="game-iframe" ></iframe>
+          </div>
+        </div>
       </div>
-      <p>&copy; 2026 KT</p>
-    </div>
-  </footer>
 
-  <script src="scripts/nav.js"></script>
-  <script src="scripts/memory-game-preview.js"></script>
-</body>
+      <br><br>
+
+      <a href="https://github.com/B0lt5?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn" id="project-btn"><i class="fa-solid fa-up-right-from-square"></i> See more of my work</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/kitan-ayoola-1471193a1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in fa-1x"></i></a>
+          <a href="https://github.com/B0lt5" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-1x"></i></a>
+          <a href="https://x.com/oluwakitan17466" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) profile"><i class="fa-brands fa-x-twitter fa-1x"></i></a>
+        </div>
+        <p>&copy; 2026 KT</p>
+      </div>
+    </footer>
+
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/memory-game-preview.js"></script>
+  </body>
 
   <script src="scripts/analytics.js"></script>
   <script defer src="/_vercel/insights/script.js"></script>

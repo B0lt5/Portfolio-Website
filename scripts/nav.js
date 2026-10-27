@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (hamburger && headerLinks) {
     hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('open');
-      headerLinks.classList.toggle('nav-open');
+      const isOpen = hamburger.classList.toggle('open');
+      headerLinks.classList.toggle('nav-open', isOpen);
+      hamburger.setAttribute('aria-expanded', String(isOpen));
     });
   }
 

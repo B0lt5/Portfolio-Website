@@ -9,6 +9,7 @@
     background-color: black;
     color: white;
     line-height: 1.6;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   .container {
@@ -56,6 +57,11 @@
     position: relative;
   }
 
+  body .nav a:hover,
+  body .nav a.active {
+    color: #fff;
+  }
+
   .nav a::before {
     content: "";
     position: absolute;
@@ -68,6 +74,10 @@
   }
 
   .nav a:hover::before {
+    width: 100%;
+  }
+
+  .nav a.active::before {
     width: 100%;
   }
 
@@ -140,9 +150,6 @@
       width: 100%;
     }
 
-    .nav a::before {
-      display: none;
-    }
   }
 
   h1 .fa-solid,
